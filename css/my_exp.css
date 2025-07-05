@@ -85,11 +85,12 @@
 
         margin-left: auto;
         margin-right: auto;
-        height: 110px;
-        width: 100px;
+        height: 132px;
+        width: 120px;
         position: absolute;
         top: var(--top_reward);
-        left: var(--left_reward);
+        /* left: var(--left_reward); */
+        left: calc(var(--left_reward) - 10px);
     }
 
     .group {
