@@ -1,4 +1,4 @@
-# Oil Across Domains - Visual Version
+# OIL Across Domains - Visual Version
 
 This experiment studies how participants learn reward contingencies based on **visual features** (colored circle/icons) in a reinforcement learning paradigm.
 
