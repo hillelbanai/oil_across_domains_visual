@@ -147,7 +147,7 @@
 
         var background = 'images/new_background.png'
 
-        var filled_background = 'images/filled_background.png'
+        var grey_circle = 'images/test/grey.png'
 
         // Color blindness test images
         var color_blindness_image = ['images/color_blindness/1.png', 'images/color_blindness/2.png'];
@@ -197,7 +197,7 @@
         //preload
         var preload = {
             type: jsPsychPreload,
-            images: [instructions_images, keyboard_images, practice_deck, test_deck, reward_images, background, filled_background, color_blindness_image]
+            images: [instructions_images, keyboard_images, practice_deck, test_deck, reward_images, background, grey_circle, color_blindness_image]
         };
 
         timeline.push(preload)
@@ -625,7 +625,7 @@
             icon_locs[locs[0]] = icons[0];
             icon_locs[locs[1]] = icons[1];
 
-            show_icon_locs = Array(4).fill(filled_background);
+            show_icon_locs = Array(4).fill(grey_circle);
             // Use practice_deck for practice trials, test_deck for experimental trials
             var current_deck = (typeof is_practice !== 'undefined' && is_practice === 1) ? practice_deck : test_deck;
             show_icon_locs[locs[0]] = current_deck[icons[0]];
